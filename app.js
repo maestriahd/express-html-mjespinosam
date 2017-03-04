@@ -47,7 +47,7 @@ app.use('/objetivos', objetivo);
 // descomente y cambie los valores de la siguiente línea
 // app.use('/DONDE?', NOMBRE_RUTA);
 
-app.use('/about', about);
+app.use('/', about);
 app.use('/plantasmedicinales',planta);
 
 // Rutinas para la detectar errores e informarlos al cliente
