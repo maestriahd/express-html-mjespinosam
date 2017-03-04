@@ -10,14 +10,15 @@ var bodyParser = require('body-parser');
 // las rutas son los archivos que ejecutan la lógica en el servidor
 // cuando un cliente hace una petición. Los archivos están guardados
 // en el directorio `routes`
-var index = require('./routes/index');
 var users = require('./routes/users');
-var gatos = require('./routes/gato');
-var planta = require('./routes/planta');
 var objetivo = require ('./routes/objetivo');
 // **** PARA AGREGAR UNA NUEVA RUTA  ****
 // descomente y cambie los valores de la siguiente línea
 //var NOMBRE_RUTA = require('./routes/ARCHIVO_RUTA');
+var about = require('./routes/about');
+var planta = require('./routes/planta');
+
+
 
 var app = express();
 
@@ -40,15 +41,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // INTEGRACION DE LAS RUTAS EN LA APLICACION
 // ejecuta el codigo de JS cuando es llamado desde una URL por el cliente
-app.use('/', index);
 app.use('/hola', users);
-app.use('/gatos', gatos);
-app.use('/plantasmedicinales', planta);
 app.use('/objetivos', objetivo);
 // **** PARA AGREGAR UNA NUEVA RUTA  ****
 // descomente y cambie los valores de la siguiente línea
 // app.use('/DONDE?', NOMBRE_RUTA);
 
+app.use('/about', about);
+app.use('/plantasmedicinales',planta);
 
 // Rutinas para la detectar errores e informarlos al cliente
 // para tener más información del significado de los códigos entregados al cliente
