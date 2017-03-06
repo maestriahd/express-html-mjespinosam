@@ -29,9 +29,11 @@ La actividad a realizar durante esta semana es la creación de nuevas rutas y vi
 
 |  Criterio  | %      |  Calificación |
 |----------|:-------------:|------:|
-| Redacción, ortografía, citación de fuentes |  40% | - |
-| Suficiencia en la implementación técnica nodejs, express, HTML |    60%   | - |
-| ** Nota Final** | | -|
+| Redacción, ortografía, citación de fuentes |  40% | 4 |
+| Suficiencia en la implementación técnica nodejs, express, HTML |    60%   | 5 |
+| ** Nota Final** | | 4.6 |
+
+El ejercicio presentado corresponde con lo esperado para el nivel básico de la entrega en cuanto a la suficiencia técnica. En cuanto al contenido, es necesario incluir las referencias a las fuentes de las imágenes utilizadas.
 
 ## Recursos
 
